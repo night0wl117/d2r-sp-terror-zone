@@ -1,12 +1,15 @@
 # d2r-sp-terror-zone
-A simple script that modifies files to simulate Terror Zones in Single Player (only works in Hell Difficulty).
+A simple script that modifies files to simulate Terror Zones in Single Player (only works in Hell Difficulty). I haven't tested every zone, there might be bugs or crashes, let me know if you experience any (with screenshot(s) if possible :) ). The script modifies levels.txt, monstats.txt, hudlevelsnameshd.json and levels.json file. If any of your mod depends on these files, they will probably no longer work as expected.
 
 ## Limitations
 - Only works in Hell Difficulty but it cannot check if Baal is killed or not. You can use it anytime in Hell if you want.
 - Does not have Terror Zone graphics / sound
 - Only Bosses (Act bosses + Summoner, Nihlathak, etc..) and Superuniques (Eldritch, Pindleskin, etc...) drop Sunder Charms (~1% drop rate).
 - The game has to be restarted everytime the script updates files, there is no way to force-update the game without restarting (happens only if you change character level in config.ini or after a new zone is chosen which is every hour at hh:59).
-- Terrorized text will be added to the current level (couldn't color it so it's red). Sewers (Act II and Act III) uses the same id for their Level Entry text so if one is terrorized both areas will have the text but only 1 of them is actually terrorized.
+- Terrorized text will be added to the current level (couldn't color it so it's red).
+  - Sewers (Act II and Act III) uses the same id for their Level Entry text so if one is terrorized both areas will have the text but only 1 of them will be actually terrorized.
+  - Text won't show on all languages, only English.
+- No icons next to the monster's name
 
 ## Requirements
 - The script assumes you have already unpacked the game files. If you don't know what this means, visit https://www.reddit.com/r/Diablo/comments/qey05y/d2r_single_player_tips_to_improve_your_load_times/ and go to **Advanced Tip #2 - Extract game files and launch with -direct and -txt in the shortcut options**.
@@ -32,4 +35,12 @@ A simple script that modifies files to simulate Terror Zones in Single Player (o
 - The script checks the character level in config.ini every ~10 second. If it detects any change the game files will be updated accordingly (Game needs to be restarted if running).
 - Every hour at hh:59 a new zone will be chosen (Game has to be restarted)
 - If you want to terminate the script it will ask if you want to reset the files to their original state or keep it. If you want to start the game without TZ next time, type **N**.
+- Do not change the content of the **zones.ini** file, it's just there to keep track of the previous zone.
+- If you get an error like **"FileNotFoundError: [Errno 2] No such file or directory:"** you probably have a wrong path in **config.ini** for the **d2r_mod_data_folder_path** variable.
 
+
+## Extra - Installing Python and the packages
+When installing python make sure to add python to PATH 
+![image](https://user-images.githubusercontent.com/47192871/204991382-046b6fd9-dcc6-4672-89d4-7569a1d2d070.png)
+
+After python is installed, navigate to the script folder and type **cmd** in the address bar (see image above). Then type **pip install -r requirements.txt** and you should be good to go.
