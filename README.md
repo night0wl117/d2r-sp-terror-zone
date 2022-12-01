@@ -32,7 +32,7 @@ These features cannot be turned off now, might be in a future version.
    - **d2r_mod_data_folder_path**: the path to the **data** folder (this is the location of the files you have unpacked previously, should look something like this: C:\Program Files (x86)\Diablo II Resurrected\Data)
 3. Navigate to the folder you have downloaded the script and its files and type **cmd** in the address bar then press Enter (don't worry about the .venv folder, you don't need it):
 ![image](https://user-images.githubusercontent.com/47192871/204891220-1f9e7c2a-9b6e-4e26-98cc-1def4d50b26b.png)
-3. A command prompt will open. Type **terror_zone.py** (or **python3 terror_zone.py** if that does not work) then press Enter.
+3. A command prompt will open. Type **terror_zone.py** (or **python terror_zone.py** or **python3 terror_zone.py** if that does not work) then press Enter.
    - ![image](https://user-images.githubusercontent.com/47192871/204891920-9aac2241-cbf6-4532-b713-cbaae097e4d1.png)
 4. That's it, the script will run and update files until you terminate it. If you want changing zones every hour, leave the script running for as long as you play.
 
