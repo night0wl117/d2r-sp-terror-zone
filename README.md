@@ -1,5 +1,6 @@
 # d2r-sp-terror-zone
-A simple script that modifies files to simulate Terror Zones in Single Player (only works in Hell Difficulty). I haven't tested every zone, there might be bugs or crashes, let me know if you experience any (with screenshot(s) if possible :) ). The script modifies levels.txt, monstats.txt, hudlevelsnameshd.json and levels.json file. If any of your mod depends on these files, they will probably no longer work as expected.
+A simple script that modifies files to simulate Terror Zones in Single Player (only works in Hell Difficulty). I haven't tested every zone, there might be bugs or crashes, let me know if you experience any (with screenshot(s) if possible).
+The script modifies levels.txt, monstats.txt, hudlevelsnameshd.json and levels.json file. If any of your mod depends on these files, they will probably no longer work as expected.
 
 ## Limitations
 - Only works in Hell Difficulty but it cannot check if Baal is killed or not. You can use it anytime in Hell if you want.
