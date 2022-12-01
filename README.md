@@ -1,7 +1,7 @@
 # d2r-sp-terror-zone
 A simple script that modifies files to simulate Terror Zones in Single Player (only works in Hell Difficulty). I haven't tested every zone, there might be bugs or crashes, let me know if you experience any (with screenshot(s) if possible).
 
-The script modifies levels.txt, monstats.txt, hudlevelsnameshd.json and levels.json file. If any of your mod depends on these files, they will probably no longer work as expected.
+The script modifies levels.txt, monstats.txt, uniqueitems.txt, treasureclassex.txt, hudlevelsnameshd.json and levels.json file. If any of your mod depends on these files, they will probably no longer work as expected.
 
 ## Limitations
 - Only works in Hell Difficulty but it cannot check if Baal is killed or not. You can use it anytime in Hell if you want.
@@ -24,11 +24,13 @@ These features cannot be turned off now, might be in a future version.
 - Python (Tested on 3.10.2, probably needs 3.6 at least, might work on earlier versions too) installed (and the packages provided in requirements.txt): https://www.python.org/
 
 ## Usage
-0. Copy **hudlevelnameshd.json** to <your_game_folder_you_have_unpacked_the_files_to>\data\global\ui\layouts\ and overwrite the existing file there. This is needed for the "Terrorized" text to show up. If you don't do this, the area names may look weird.
-1. Open config.ini and update the 2 variables 
+0. Copying files:
+   - Copy **hudlevelnameshd.json** to <your_game_folder_you_have_unpacked_the_files_to>\data\global\ui\layouts\ and overwrite the existing file there. This is needed for the "Terrorized" text to show up. If you don't do this, the area names may look weird.
+   - Copy **treasureclassex.txt** and **uniquitems.txt** to <your_game_folder_you_have_unpacked_the_files_to>\data\global\excel\ and overwrite the existing file there.
+2. Open config.ini and update the 2 variables 
    - **Level**: the character's level you intend to play with (needs to be manually updated everytime you level up or change character)
    - **d2r_mod_data_folder_path**: the path to the **data** folder (this is the location of the files you have unpacked previously, should look something like this: C:\Program Files (x86)\Diablo II Resurrected\Data)
-2. Navigate to the folder you have downloaded the script and its files and type **cmd** in the address bar then press Enter (don't worry about the .venv folder, you don't need it):
+3. Navigate to the folder you have downloaded the script and its files and type **cmd** in the address bar then press Enter (don't worry about the .venv folder, you don't need it):
 ![image](https://user-images.githubusercontent.com/47192871/204891220-1f9e7c2a-9b6e-4e26-98cc-1def4d50b26b.png)
 3. A command prompt will open. Type **terror_zone.py** (or **python3 terror_zone.py** if that does not work) then press Enter.
    - ![image](https://user-images.githubusercontent.com/47192871/204891920-9aac2241-cbf6-4532-b713-cbaae097e4d1.png)
