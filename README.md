@@ -10,8 +10,14 @@ The script modifies levels.txt, monstats.txt, hudlevelsnameshd.json and levels.j
 - The game has to be restarted everytime the script updates files, there is no way to force-update the game without restarting (happens only if you change character level in config.ini or after a new zone is chosen which is every hour at hh:59).
 - Terrorized text will be added to the current level (couldn't color it so it's red).
   - Sewers (Act II and Act III) uses the same id for their Level Entry text so if one is terrorized both areas will have the text but only 1 of them will be actually terrorized.
-  - Text won't show on all languages, only English.
+  - Text won't show in all languages, only English.
 - No icons next to the monster's name
+
+## Extra
+- Monster density will be set to 2200 (this is the value for Tal Rasha Tomb / WSK so I guess it's nothing gamebreaking) in Terror Zones, definitely improves some areas with bad monster density.
+- Added 2 extra boss packs (added 2 to the Min and Max value that controls the number of boss packs in an area) to Terror Zones.
+
+These features cannot be turned off now, might be in a future version.
 
 ## Requirements
 - The script assumes you have already unpacked the game files. If you don't know what this means, visit https://www.reddit.com/r/Diablo/comments/qey05y/d2r_single_player_tips_to_improve_your_load_times/ and go to **Advanced Tip #2 - Extract game files and launch with -direct and -txt in the shortcut options**.
@@ -41,7 +47,7 @@ The script modifies levels.txt, monstats.txt, hudlevelsnameshd.json and levels.j
 - If you get an error like **"FileNotFoundError: [Errno 2] No such file or directory:"** you probably have a wrong path in **config.ini** for the **d2r_mod_data_folder_path** variable.
 
 
-## Extra - Installing Python and the packages
+## Installing Python and the packages
 When installing python make sure to add python to PATH 
 ![image](https://user-images.githubusercontent.com/47192871/204991382-046b6fd9-dcc6-4672-89d4-7569a1d2d070.png)
 
