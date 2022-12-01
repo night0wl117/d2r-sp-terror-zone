@@ -44,9 +44,10 @@ These features cannot be turned off now, might be in a future version.
     - ![image](https://user-images.githubusercontent.com/47192871/204898839-c989f70e-5211-4554-a485-be816c819614.png)
 - The script checks the character level in config.ini every ~10 second. If it detects any change the game files will be updated accordingly (Game needs to be restarted if running).
 - Every hour at hh:59 a new zone will be chosen (Game has to be restarted)
-- If you want to terminate the script it will ask if you want to reset the files to their original state or keep it. If you want to start the game without TZ next time, type **N**.
+- If you want to terminate the script (Ctrl + C) it will ask if you want to reset the files to their original state or keep it. If you want to start the game without TZ next time, type **N**.
 - Do not change the content of the **zones.ini** file, it's just there to keep track of the previous zone.
 - If you get an error like **"FileNotFoundError: [Errno 2] No such file or directory:"** you probably have a wrong path in **config.ini** for the **d2r_mod_data_folder_path** variable.
+- You can terminate/stop the script by pressing Ctrl + C (having the cmd window active).
 
 
 ## Installing Python and the packages
