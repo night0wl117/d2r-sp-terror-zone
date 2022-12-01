@@ -45,8 +45,6 @@ Do you want to keep current zone(s): {get_current_zone_area_name()} ?
 
                 print('Files updated. Restart D2R for the changes to take effect.')
 
-        # if len(lvls) > 1:
-        #     print(f'prev: {lvls[-2]}')
         now = datetime.now()
 
         if not initial_start:
@@ -83,7 +81,7 @@ Do you want to keep current zone(s): {get_current_zone_area_name()} ?
                 update_superunique_file(Path(d2_mod_data_folder, SUPERUNIQUES_TXT_FILE), zone_id, tzone_df)
 
                 print('Please restart D2R.')
-                
+
                 if not initial_start:
                     time.sleep(120)
                 initial_start = False
@@ -164,7 +162,7 @@ def update_monstats_file(file, zone_id, terror_zone_df, character_lvl):
         main_file_df['TreasureClass(H)'] = np.where(main_file_df['*hcIdx'].isin(boss_id), main_file_df['TreasureClassDesecrated(H)'], main_file_df['TreasureClass(H)'])
         main_file_df['TreasureClassChamp(H)'] = np.where(main_file_df['*hcIdx'].isin(boss_id), main_file_df['TreasureClassDesecratedChamp(H)'], main_file_df['TreasureClassChamp(H)'])
         main_file_df['TreasureClassUnique(H)'] = np.where(main_file_df['*hcIdx'].isin(boss_id), main_file_df['TreasureClassDesecratedUnique(H)'], main_file_df['TreasureClassUnique(H)'])
-        main_file_df['Level(H)'] = np.where(main_file_df['*hcIdx'].isin(boss_id), max(boss_lvl, min(character_lvl + 5, 99)) , main_file_df['Level(H)'])
+        main_file_df['Level(H)'] = np.where(main_file_df['*hcIdx'].isin(boss_id), max(boss_lvl, min(character_lvl + 2, 99)) , main_file_df['Level(H)'])
 
         # if boss is Andariel, update Quest Treasure Class too (since she is always bugged so the game uses that column)
         if boss_id[0] == 156:
@@ -175,7 +173,7 @@ def update_monstats_file(file, zone_id, terror_zone_df, character_lvl):
         main_file_df['TreasureClass(H)'] = np.where(main_file_df['*hcIdx'].isin(boss_id), correct_tc_for_boss, main_file_df['TreasureClass(H)'])
         main_file_df['TreasureClassChamp(H)'] = np.where(main_file_df['*hcIdx'].isin(boss_id), correct_tc_for_boss, main_file_df['TreasureClassChamp(H)'])
         main_file_df['TreasureClassUnique(H)'] = np.where(main_file_df['*hcIdx'].isin(boss_id), correct_tc_for_boss, main_file_df['TreasureClassUnique(H)'])
-        main_file_df['Level(H)'] = np.where(main_file_df['*hcIdx'].isin(boss_id), max(boss_lvl, min(character_lvl + 5, 99)) , main_file_df['Level(H)'])
+        main_file_df['Level(H)'] = np.where(main_file_df['*hcIdx'].isin(boss_id), max(boss_lvl, min(character_lvl + 2, 99)) , main_file_df['Level(H)'])
 
         # if boss is Andariel, update Quest Treasure Class too (since she is always bugged)
         if boss_id[0] == 156:
@@ -280,12 +278,12 @@ def get_correct_TC_for_multiple_lvl_TC(terror_zone_df, zone_id):
     TC_levels = TC_rows['level'].astype(int).tolist()
     TC_levels.sort()
 
-    # if character level (+5) is less than the boss' min TC level we choose the boss' min TC level
-    if character_lvl < min(TC_levels):
+    # if character level (+5) is less than or equal to the superunique's min TC level we choose the superunique's min TC level
+    if character_lvl <= min(TC_levels):
         max_lvl = min(TC_levels)
 
     for lvl in TC_levels:
-        while lvl < character_lvl:
+        while lvl <= character_lvl:
             max_lvl = lvl
             break
 
@@ -302,12 +300,12 @@ def get_correct_TC_for_boss(terror_zone_df, zone_id):
     TC_levels = TC_rows[TC_rows['level'].notna()]['level'].astype(int).tolist()
     TC_levels.sort()
     
-    # if character level (+5) is less than the boss' min TC level we choose the boos' min TC level
-    if character_lvl < min(TC_levels):
+    # if character level (+5) is less than or equal to the boss' min TC level we choose the boss' min TC level
+    if character_lvl <= min(TC_levels):
         max_lvl = min(TC_levels)
     
     for lvl in TC_levels:
-        while lvl < character_lvl:
+        while lvl <= character_lvl:
             max_lvl = lvl
             break
 
