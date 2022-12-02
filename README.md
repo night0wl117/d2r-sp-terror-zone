@@ -6,12 +6,14 @@ The script modifies levels.txt, monstats.txt, uniqueitems.txt, treasureclassex.t
 ## Limitations
 - Only works in Hell Difficulty but it cannot check if Baal is killed or not. You can use it anytime in Hell if you want.
 - Does not have Terror Zone graphics / sound
+  - No icons next to the monster's name
+  - Does not show the terrorized zone in the top right corner (the purple text)
+  - No sound effect on entry
 - Only Bosses (Act bosses + Summoner, Nihlathak, etc..) and Superuniques (Eldritch, Pindleskin, etc...) drop Sunder Charms (~1% drop rate).
 - The game has to be restarted everytime the script updates files, there is no way to force-update the game without restarting (happens only if you change character level in config.ini or after a new zone is chosen which is every hour at hh:59).
 - Terrorized text will be added to the current level (couldn't color it so it's red).
   - Sewers (Act II and Act III) uses the same id for their Level Entry text so if one is terrorized both areas will have the text but only 1 of them will be actually terrorized.
   - Text won't show in all languages, only English.
-- No icons next to the monster's name
 
 ## Extra
 - Monster density will be set to 2200 (this is the value for Tal Rasha Tomb / WSK so I guess it's nothing gamebreaking) in Terror Zones, definitely improves some areas with bad monster density.
