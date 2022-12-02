@@ -12,7 +12,7 @@ The script modifies levels.txt, monstats.txt, uniqueitems.txt, treasureclassex.t
 - Only Bosses (Act bosses + Summoner, Nihlathak, etc..) and Superuniques (Eldritch, Pindleskin, etc...) drop Sunder Charms (~1% drop rate).
 - The game has to be restarted everytime the script updates files, there is no way to force-update the game without restarting (happens only if you change character level in config.ini or after a new zone is chosen which is every hour at hh:59).
 - Terrorized text will be added to the current level (couldn't color it so it's red).
-  - Sewers (Act II and Act III) uses the same id for their Level Entry text so if one is terrorized both areas will have the text but only 1 of them will be actually terrorized.
+  - Sewers (Act II and Act III) uses the same id for their Level Entry text so if one is terrorized both areas will have the text but only 1 of them will actually be terrorized.
   - Text won't show in all languages, only English.
 
 ## Extra
