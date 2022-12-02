@@ -28,7 +28,7 @@ These features cannot be turned off now, might be in a future version.
 ## Usage
 0. Copying files:
    - Copy **hudlevelnameshd.json** to <your_game_folder_you_have_unpacked_the_files_to>\data\global\ui\layouts\ and overwrite the existing file there. This is needed for the "Terrorized" text to show up. If you don't do this, the area names may look weird.
-   - Copy **treasureclassex.txt** and **uniquitems.txt** to <your_game_folder_you_have_unpacked_the_files_to>\data\global\excel\ and overwrite the existing file there.
+   - Copy **treasureclassex.txt** and **uniqueitems.txt** to <your_game_folder_you_have_unpacked_the_files_to>\data\global\excel\ and overwrite the existing file there.
 2. Open config.ini and update the 2 variables 
    - **Level**: the character's level you intend to play with (needs to be manually updated everytime you level up or change character)
    - **d2r_mod_data_folder_path**: the path to the **data** folder (this is the location of the files you have unpacked previously, should look something like this: C:\Program Files (x86)\Diablo II Resurrected\Data)
