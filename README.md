@@ -24,6 +24,7 @@ These features cannot be turned off now, might be in a future version.
 ## Requirements
 - The script assumes you have already unpacked the game files. If you don't know what this means, visit https://www.reddit.com/r/Diablo/comments/qey05y/d2r_single_player_tips_to_improve_your_load_times/ and go to **Advanced Tip #2 - Extract game files and launch with -direct and -txt in the shortcut options**.
 - Python (Tested on 3.10.2, probably needs 3.6 at least, might work on earlier versions too) installed (and the packages provided in requirements.txt): https://www.python.org/
+  - if you don't know how to do this, go to the last section: https://github.com/night0wl117/d2r-sp-terror-zone#installing-python-and-the-packages
 
 ## Usage
 0. Copying files:
