@@ -16,7 +16,7 @@ The script modifies levels.txt, monstats.txt, uniqueitems.txt, treasureclassex.t
   - Text won't show in all languages, only English.
 
 ## Extra
-- Monster density will be set to 2200 (this is the value for Tal Rasha Tomb / WSK so I guess it's nothing gamebreaking) in Terror Zones, definitely improves some areas with bad monster density.
+- Monster density is set to 2200 (this is the value for Tal Rasha Tomb / WSK so I guess it's nothing gamebreaking) in Terror Zones, definitely improves some areas with bad monster density.
 - Added 2 extra boss packs (added 2 to the Min and Max value that controls the number of boss packs in an area) to Terror Zones.
 
 These features cannot be turned off now, might be in a future version.
