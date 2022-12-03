@@ -1,6 +1,6 @@
 # D2R Single Player Terror Zone Mod
 A simple script that modifies files to simulate Terror Zones in Single Player (only works in Hell Difficulty). I haven't tested every zone, there might be bugs or crashes (obviously only the script crashes, not your game :) ), let me know if you experience any (with screenshot(s) if possible).
-A
+
 The script modifies levels.txt, monstats.txt, uniqueitems.txt, treasureclassex.txt, hudlevelsnameshd.json and levels.json file. If any of your mod depends on these files, they will probably no longer work as expected.
 
 ## Limitations
