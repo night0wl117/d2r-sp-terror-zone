@@ -100,7 +100,7 @@ def set_files_to_original_state():
 def update_levels_txt_file(file, zone_id):
     main_file_df = pd.read_csv(file, delimiter='\t')
     character_lvl = get_character_level()
-    mon_lvl = min(main_file_df[main_file_df['Id'].isin(zone_id)]['MonLvlEx(H)'].astype(int).values)
+    mon_lvl = min(main_file_df[main_file_df['Id'].isin(zone_id)]['MonLvlEx(H)'].dropna().astype(int).values)
     main_file_df['MonLvlEx(H)'] = np.where(main_file_df['Id'].isin(zone_id), max(mon_lvl, min(character_lvl + 2, 96)), main_file_df['MonLvlEx(H)'])
     # Set monster density to 2200
     main_file_df['MonDen(H)'] = np.where(main_file_df['Id'].isin(zone_id), 2200, main_file_df['MonDen(H)'])
