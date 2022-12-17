@@ -338,7 +338,7 @@ Shadowkiller	334	100	1		1		85	78	7cs	battle cestus		5	5000				invaxfu				dmg%		1
 Gimmershred	335	100	1		1		78	70	7ta	flying axe		5	5000	lgrn							dmg%		160	210	dmg-fire		218	483	dmg-cold	100	176	397	dmg-ltng		29	501	stack		60	60	swing2		30	30																										0
 Griffon's Eye	336	100	1		1		84	76	ci3	diadem		5	5000								ac		100	200	cast2		25	25	allskills		1	1	extra-ltng		10	15	pierce-ltng		15	20																														0
 Windhammer	337	100	1		1		76	68	7m7	ogre maul		5	5000	cblu	cblu		invmau				dmg%		180	230	crush		50	50	swing2		60	60	hit-skill	Twister	33	22																																		0
-Thunderstroke	338	100	1		1		77	69	amf	matriarchal javelin		5	5000	dblu	dblu						dmg%		150	200	dmg-ltng		1	511	hit-skill	Lightning	20	14	swing2		15	15	pierce-ltng		15	15	skill	Lightning Bolt	3	3	skilltab	2	2	4	rep-quant	30																				0
+Thunderstroke	338	100	1		1		77	69	amf	matriarchal javelin		5	5000	dblu	dblu						dmg%		150	200	dmg-ltng		1	511	hit-skill	Lightning	20	14	swing2		15	15	pierce-ltng		15	15	skill	Lightning Bolt	3	3	skilltab	2	2	4																						0
 Giantmaimer	339	100			1							5	5000	cred	cred																																																							0
 Demon's Arch	340	100	1		1		76	68	7s7	balrog spear		5	5000	cred	cred						dmg%		160	210	dmg-fire		232	323	lifesteal		6	12	rep-quant	30			swing2		30	30	dmg-ltng		23	333																										0
 Boneflame	341	100	1		1		80	72	nee	succubae skull		3	5000	dred	dred						ac%		120	150	move2		20	20	gethit-skill	Terror	15	3	nec		2	3	res-all		20	30																														0
