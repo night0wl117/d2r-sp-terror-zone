@@ -27,9 +27,10 @@ These features cannot be turned off now, might be in a future version.
   - if you don't know how to do this, go to the last section: https://github.com/night0wl117/d2r-sp-terror-zone#installing-python-and-the-packages
 
 ## Usage
-0. Copying files:
+0. Copying files (data folder):
    - Copy **hudlevelnameshd.json** to <your_game_folder_you_have_unpacked_the_files_to>\data\global\ui\layouts\ and overwrite the existing file there. This is needed for the "Terrorized" text to show up. If you don't do this, the area names may look weird.
    - Copy **treasureclassex.txt** and **uniqueitems.txt** to <your_game_folder_you_have_unpacked_the_files_to>\data\global\excel\ and overwrite the existing file there.
+   - Alternatively you can just drag the data folder to the same folder you have the unpacked files and just drop it there (the same folder where you have the unpacked, original data. If you did it right, it will ask you if you want to overwrite 3 files, say yes).
 2. Open config.ini and update the 2 variables 
    - **Level**: the character's level you intend to play with (needs to be manually updated everytime you level up or change character)
    - **d2r_mod_data_folder_path**: the path to the **data** folder (this is the location of the files you have unpacked previously, should look something like this: C:\Program Files (x86)\Diablo II Resurrected\Data)
