@@ -59,3 +59,9 @@ When installing python make sure to add python to PATH
 ![image](https://user-images.githubusercontent.com/47192871/204991382-046b6fd9-dcc6-4672-89d4-7569a1d2d070.png)
 
 After python is installed, navigate to the script folder and type **cmd** in the address bar (see image above). Then type **pip install -r requirements.txt** and you should be good to go.
+
+## Pictures
+![image](https://user-images.githubusercontent.com/47192871/209430289-4e94f5f7-1c9a-4d87-81de-e8ded518f257.png)
+
+---
+![image](https://user-images.githubusercontent.com/47192871/209430352-797cd227-3557-4afe-81e1-f3c6987ea1e9.png)
